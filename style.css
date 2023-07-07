@@ -6,6 +6,16 @@ body {
     overflow: hidden;
 }
 
+@keyframes vertigo {
+    0% {
+        background-position: center, 0 0;
+    }
+
+    100% {
+        background-position: center, -800% 0;
+    }
+}
+
 body {
     --bg-layer-1-color: rgba(7, 21, 57, .8);
     padding: unset;
@@ -16,6 +26,7 @@ body {
     background-size: 100%, 30%;
     background-repeat: no-repeat, repeat;
     background-position: center, center;
+    animation: vertigo 3s linear infinite;
 }
 
 .d-flex {
@@ -63,6 +74,9 @@ body {
 }
 
 #congratulation {
+    user-select: none;
+    cursor: pointer;
+    word-wrap: normal;
     z-index: 100;
     position: absolute;
     top: 50%;
