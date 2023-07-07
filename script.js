@@ -23,14 +23,3 @@ const balloonsTemplate = document.querySelector("template#balloons");
         document.body.appendChild(balloonsElem);
     });
 
-
-/** @type {HTMLTemplateElement} */
-const nyanTemplate = document.querySelector("template#nyan");
-
-[...Array(3).keys()]
-    .forEach((_, i) => {
-        /** @type {HTMLImageElement} */
-        const nyanElem = nyanTemplate.content.cloneNode(true).querySelector('img');
-        nyanElem.style.cssText += `--index: ${i}`;
-        document.body.appendChild(nyanElem)
-    })

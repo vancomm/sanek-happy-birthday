@@ -6,6 +6,11 @@ body {
     overflow: hidden;
 }
 
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
 @keyframes vertigo {
     0% {
         background-position: center, 0 0;
