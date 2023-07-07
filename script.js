@@ -23,3 +23,11 @@ const balloonsTemplate = document.querySelector("template#balloons");
         document.body.appendChild(balloonsElem);
     });
 
+
+function updatePageTitle() {
+    document.title = document.title.includes("❤️") 
+        ? document.title.replace(" ❤️", "")
+        : document.title + " ❤️"
+}
+
+setInterval(updatePageTitle, 500);
